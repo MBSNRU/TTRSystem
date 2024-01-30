@@ -23,6 +23,8 @@ builder.Services.AddScoped<IRegisterRepo, RegisterRepo>();
 builder.Services.AddScoped<IRegisterLogic, RegisterLogic>();
 builder.Services.AddScoped<IStationRepo, StationRepo>();
 builder.Services.AddScoped<IStationLogic, StationLogic>();
+builder.Services.AddScoped<ITrainRepo, TrainRepo>();
+builder.Services.AddScoped<ITrainLogic, TrainLogic>();
 
 
 var app = builder.Build();
