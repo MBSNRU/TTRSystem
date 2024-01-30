@@ -1,0 +1,21 @@
+This is the basic skeleton of how our project UI looks like.
+Ideally, we will be using Single Page Application Frameworks or libraries like React or Angular for our UI
+The main Components of our UI will be -
+1.Register Route - Here we will take details from the user and on submitting the form, we will do a post request to our api and
+redirect user to login page.
+2.Login Route - Here we will take username and password from the user and do a post request to our api, and upon success we will get
+a jwt token in the response and we will redirect user to home page  . we will store this token in cookies and later use it in
+Authorization headers of our requests.
+3.Home Route - Here we will have a form where user will fill the details to book a ticket and on clicking search button, we will 
+redirect user to Booking Page.
+4.Booking Route - Here we will display the trains that we got upon search and their seat availability and other information.On selecting
+available train and clicking on button, we will redirect user to payment page with booking information and payment methods.
+5.Payment Route - Here user will select his payment mode and proceed further.
+6.Account Route - Here we will display user details and we will give option to edit those details.
+NavBar will be common across all the Routes.
+Ideally we should implement a Protected Route Mechanism that prevents unauthenticated users from accessing major routes of the application.
+Here the data for the Routes will be dynamic and  coming from api requests.
+
+*****************************
+
+I have just wrote the basic HTML and CSS for Register , Login and Home Pages which are basic forms.
