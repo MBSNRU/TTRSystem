@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="home-con">
+      <form id="bookingForm">
+        <h1>Book Ticket</h1>
+        <label for="fromStation">From Station:</label>
+        <input type="text" id="fromStation" name="fromStation" required />
+
+        <label for="toStation">To Station:</label>
+        <input type="text" id="toStation" name="toStation" required />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="class">Class:</label>
+        <select id="class" name="class">
+          <option value="all">All Classes</option>
+          <option value="thirdAc">Third AC</option>
+          <option value="sleeper">Sleeper</option>
+          <option value="secondAc">Second AC</option>
+          <option value="firstAc">First AC</option>
+          <option value="secondSitting">Second Sitting</option>
+        </select>
+
+        <label for="quota">Quota:</label>
+        <select id="quota" name="quota">
+          <option value="general">General</option>
+          <option value="tatkal">Tatkal</option>
+          <option value="premiumTatkal">Premium Tatkal</option>
+        </select>
+
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </body>
+</html>
