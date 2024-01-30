@@ -21,6 +21,8 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("TtrsDbConnection
 //Injecting Repository Pattern and Business Logic
 builder.Services.AddScoped<IRegisterRepo, RegisterRepo>();
 builder.Services.AddScoped<IRegisterLogic, RegisterLogic>();
+builder.Services.AddScoped<IStationRepo, StationRepo>();
+builder.Services.AddScoped<IStationLogic, StationLogic>();
 
 
 var app = builder.Build();
