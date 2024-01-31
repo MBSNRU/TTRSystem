@@ -31,6 +31,8 @@ builder.Services.AddScoped<ISeatRepo, SeatRepo>();
 builder.Services.AddScoped<ISeatLogic, SeatLogic>();
 builder.Services.AddScoped<ITrainStationRepo, TrainStationRepo>();
 builder.Services.AddScoped<ITrainStationLogic, TrainStationLogic>();
+builder.Services.AddScoped<IBookingRepo, BookingRepo>();
+builder.Services.AddScoped<IBookingLogic, BookingLogic>();
 
 
 var app = builder.Build();
